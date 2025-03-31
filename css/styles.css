@@ -1,7 +1,37 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 .logo{
     width: 20vw;
 }
 header{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.navegador{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+
+.navegador li{
+    justify-content: space-between;
+    margin: 20px;
+}
+section{
+    display: flex;
+    flex-direction: row;
+}
+footer{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+article img{
+    width: 200px;
 }
