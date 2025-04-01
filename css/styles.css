@@ -10,6 +10,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
 
 .navegador{
@@ -31,6 +32,9 @@ footer{
      display: flex;
      justify-content: space-around;
      align-items: center;
+     height: 100px;
+     background-color: ;
+     
 }
 article img{
     width: 200px;
