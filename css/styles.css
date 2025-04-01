@@ -3,26 +3,47 @@
     text-decoration: none;
 }
 
-.logo{
-    width: 20vw;
-}
 header{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+.menubar{
+    display: flex;
+    width: 98%;
+    margin: 15px;
+
+}
+
+.busqueda {
+    display: flex;
+    justify-content: start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 25px;
+}
+
 .navegador{
     list-style: none;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    color: black;
+    align-items: center;
+    margin-top: 53px;
+    margin-left: 100px;
 }
 
-.navegador li{
+/*HAY QUE ARREGLAR LOS PALITOS NEGROS*/
+
+.navegador a {
     justify-content: space-between;
     margin: 20px;
+    color: white;
 }
+
 section{
     display: flex;
     flex-direction: row;
@@ -34,4 +55,17 @@ footer{
 }
 article img{
     width: 200px;
+}
+
+body {
+    background-color: #e3e1dc;
+    background-image: url('../img/menubar.png');
+    background-size: 97%;
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-color: #060063;
+    color: white;
 }
