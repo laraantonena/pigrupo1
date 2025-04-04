@@ -35,3 +35,35 @@ footer{
 article img{
     width: 200px;
 }
+/* arranco login*/
+.title{
+text-align: center;
+margin: bottom 20px;
+}
+.formlogin {
+    max-width: 400px; 
+    margin: 20px auto; 
+    padding: 50px; 
+    background-color:rgb(226, 156, 216);
+    border-radius: 5px; 
+}
+input{
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*Este es registrer*/
+.registrer{
+    max-width: 400px; 
+    margin: 20px auto; 
+    padding: 50px; 
+    background-color:rgb(226, 156, 216);
+    border-radius: 5px; 
+}
