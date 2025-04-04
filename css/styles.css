@@ -59,6 +59,11 @@ a{
     text-decoration: none;
     color: black;
 }
+.ingreso{
+    padding: 10px;
+    background-color:  rgb(210, 176, 255);
+    border-radius: 5px;
+}
 /*Este es registrer*/
 .registrer{
     max-width: 400px; 
@@ -66,4 +71,10 @@ a{
     padding: 50px; 
     background-color:rgb(226, 156, 216);
     border-radius: 5px; 
+}
+.check{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    
 }
