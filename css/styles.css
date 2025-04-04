@@ -49,6 +49,10 @@ section{
     display: flex;
     flex-direction: row;
 }
+
+section article{
+    justify-content: space-between;
+}
 footer{
      display: flex;
      justify-content: space-around;
@@ -68,4 +72,5 @@ body {
     background-size: 97%;
     background-position: 15px 15px;
     background-repeat: no-repeat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
