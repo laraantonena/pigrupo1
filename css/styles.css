@@ -7,6 +7,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
 
 .menubar{
@@ -52,7 +53,11 @@ footer{
      display: flex;
      justify-content: space-around;
      align-items: center;
+     height: 100px;
+     background-color: #060063;
+    color: white; 
 }
+
 article img{
     width: 200px;
 }
@@ -63,9 +68,4 @@ body {
     background-size: 97%;
     background-position: 15px 15px;
     background-repeat: no-repeat;
-}
-
-footer {
-    background-color: #060063;
-    color: white;
 }
