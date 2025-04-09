@@ -88,10 +88,11 @@ article img{
 .title{
 text-align: center;
 margin: bottom 20px;
+color: aliceblue;
 }
 .formlogin {
     max-width: 400px; 
-    margin: 20px auto; 
+    margin: 110px auto; 
     padding: 50px; 
     background-color:rgb(123, 136, 167);
     border-radius: 5px; 
@@ -116,7 +117,7 @@ a{
 /*Este es registrer*/
 .registrer{
     max-width: 400px; 
-    margin: 20px auto; 
+    margin: 110px auto; 
     padding: 50px; 
     background-color:rgb(123, 136, 167);
     border-radius: 5px; 
