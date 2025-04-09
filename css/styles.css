@@ -128,5 +128,8 @@ a{
     flex-direction: row;
     margin: 10px;
 }
-
+.search{
+    margin-bottom: 370px;
+    padding: 0;
+}
 
