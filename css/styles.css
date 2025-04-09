@@ -2,7 +2,10 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: gray;
+}
 header{
     display: flex;
     justify-content: space-around;
@@ -10,6 +13,11 @@ header{
     background-color: #060063;
     height: 120px;
     margin-bottom: 15px;
+}
+.sectionheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .menubar{
@@ -51,15 +59,19 @@ header{
     color: white;
 }
 
-section{
+.romance{
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
 }
-
-section article{
-    justify-content: space-between;
-    
+.peliculaspopulares{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px;
 }
+
+
 footer{
      display: flex;
      justify-content: space-around;
