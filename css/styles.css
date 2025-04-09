@@ -7,8 +7,9 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: blue;
-
+    background-color: #060063;
+    height: 120px;
+    margin-bottom: 15px;
 }
 
 .menubar{
@@ -21,7 +22,7 @@ header{
 .busqueda {
     display: flex;
     justify-content: start;
-    margin-top: 50px;
+    margin-top: 85px;
     margin-bottom: 50px;
     margin-left: 100px;
     margin-right: 100px;
@@ -34,11 +35,15 @@ header{
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    margin-top: 53px;
-    margin-left: 100px;
 }
 
-/*HAY QUE ARREGLAR LOS PALITOS NEGROS*/
+.stick {
+    color: white;
+}
+
+.navegador li {
+    margin-top: 30px;
+}
 
 .navegador a {
     justify-content: space-between;
