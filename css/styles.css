@@ -93,7 +93,7 @@ margin: bottom 20px;
     max-width: 400px; 
     margin: 20px auto; 
     padding: 50px; 
-    background-color:rgb(226, 156, 216);
+    background-color:rgb(123, 136, 167);
     border-radius: 5px; 
 }
 .log{
@@ -110,7 +110,7 @@ a{
 }
 .ingreso{
     padding: 10px;
-    background-color:  rgb(210, 176, 255);
+    background-color: #fcfcfc;
     border-radius: 5px;
 }
 /*Este es registrer*/
@@ -118,7 +118,7 @@ a{
     max-width: 400px; 
     margin: 20px auto; 
     padding: 50px; 
-    background-color:rgb(226, 156, 216);
+    background-color:rgb(123, 136, 167);
     border-radius: 5px; 
 }
 .check{
