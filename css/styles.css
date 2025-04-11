@@ -178,11 +178,49 @@ header{
 
 /*tablet*/
 
-@media (max-width: 768) {
+@media (max-width: 320px) {
 
-    body {
-        margin-right: 8px;
-        margin-left: 8px;
-    } 
+    header {
+        height: 350px;
+        margin: unset;
 
+    }
+
+    .ulheader {
+        flex-direction: column; 
+        margin: unset;
+    }
+
+    .navegation{
+        flex-direction: column; 
+        margin: unset;
+
+    }
+
+    .logo {
+        width: 100px;
+        height: 60px;
+        margin: unset;
+    }
+
+    .headerli {
+        margin: 10px;
+    }
+
+    span {
+        display: none;
+    }
+
+    .peliculaspopulares {
+        flex-direction: column; 
+    }
+
+    footer {
+        flex-direction: column; 
+        height: 200px;
+    }
+
+    .romance {
+        flex-direction: column; 
+    }
 }
