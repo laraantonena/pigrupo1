@@ -80,7 +80,7 @@ header{
 }
  
 .foto{
-    max-width: 90px;
+    max-width: 200px;
 }
 .romantic{
     max-width: 400px;
@@ -95,7 +95,10 @@ footer{
      background-color: #060063;
     color: white; 
 }
-
+h3{
+    text-align: left;
+    flex-wrap: nowrap;
+}
 article img{
     width: 200px;
 }
