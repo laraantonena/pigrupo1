@@ -78,7 +78,14 @@ header{
     flex-direction: row;
     justify-content: space-around;
 }
-
+ 
+.foto{
+    max-width: 150px;
+}
+.romantic{
+    max-width: 400px;
+    margin: 40px;
+}
 
 footer{
      display: flex;
