@@ -32,8 +32,16 @@ footer{
      align-items: center;
      height: 100px;
      background-color: #060063;
-    color: white; 
+     color: white; 
 }
+
+.bodyfooter {
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
 h3{
     text-align: left;
     flex-wrap: nowrap;
