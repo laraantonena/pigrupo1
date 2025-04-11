@@ -113,7 +113,7 @@ a{
     background-color: #fcfcfc;
     border-radius: 5px;
 }
-/*Este es registrer*/
+/*Este es register*/
 .registrer{
     max-width: 400px; 
     margin: 110px auto; 
@@ -131,4 +131,60 @@ a{
     margin-bottom: 370px;
     padding: 0;
 }
+/*Géneros*/
+body {
+    background-color: #e3e3e3;
+}
+
+.genre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.genero {
+  height: 350px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 125px;
+  margin-bottom: 122px;
+  background-repeat: no-repeat;
+  border: #060063 1.5px solid;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.géneros {
+    width: 85px;
+    margin-right: 75px;
+    transform: rotate(0.05turn);
+  }
+
+  .romance {
+    width: 100px;
+  }
+
+  .terror {
+    width: 75px;
+  }
+
+  .fantasía {
+    width: 125px;
+  }
+
+  .suspenso {
+    width: 45px;
+  }
+
+  .acción {
+    width: 100px;
+  }
+
+  .genretitle {
+    transform: rotate(270deg);
+    color: #060063;
+    font-size: 25px;
+  }
+
 
