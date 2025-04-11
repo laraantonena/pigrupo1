@@ -6,6 +6,15 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: gray;
 }
+
+.logo {
+    width: 170px;
+    height: 100px;
+    margin-top: 125px;
+    justify-content: start;
+    margin-right: 295px;
+}
+
 header{
     display: flex;
     justify-content: space-around;
