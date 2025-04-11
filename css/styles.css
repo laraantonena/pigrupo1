@@ -7,67 +7,6 @@ body{
     background-color: gray;
 }
 
-.logo {
-    width: 170px;
-    height: 100px;
-    margin-top: 125px;
-    justify-content: start;
-    margin-right: 295px;
-}
-
-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #060063;
-    height: 120px;
-    margin-bottom: 15px;
-}
-.sectionheader{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.menubar{
-    display: flex;
-    width: 98%;
-    margin: 15px;
-
-}
-
-.busqueda {
-    display: flex;
-    justify-content: start;
-    margin-top: 85px;
-    margin-bottom: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
-    height: 25px;
-}
-
-.navegador{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-top: 140px;
-}
-
-.stick {
-    color: white;
-}
-
-.navegador li {
-    margin-top: 30px;
-}
-
-.navegador a {
-    justify-content: space-between;
-    margin: 20px;
-    color: white;
-}
-
 .romance{
     display: flex;
     justify-content: space-around;
@@ -209,9 +148,30 @@ body {
 
   /*header 2.0*/
 
-  .logonew {
+  .logo {
+    width: 170px;
+    height: 100px;
+    margin-top: 125px;
+    justify-content: start;
+    margin-right: 295px;
     margin-bottom: 117px;
-  }
+}
+
+.ulheader {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #060063;
+    height: 120px;
+    margin-bottom: 15px;
+}
 
   .navegation {
     display: flex;
