@@ -80,7 +80,7 @@ header{
 }
  
 .foto{
-    max-width: 150px;
+    max-width: 90px;
 }
 .romantic{
     max-width: 400px;
@@ -201,6 +201,7 @@ body {
     transform: rotate(270deg);
     color: #060063;
     font-size: 25px;
+    
   }
 
   /*header 2.0*/
