@@ -142,40 +142,60 @@ body {
     justify-content: space-around;
     flex-direction: row;
     list-style-type: none;
+    margin: 0px; 
 }
 
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #060063;
     height: 120px;
-    margin-bottom: 15px;
+    padding: 0 20px;
 }
 
   .navegation {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     color: white;
   }
   
   .navegation a {
     color: white;
-    margin: 20px;
+    margin: 0 15 px;
   }
   
   .navegation span {
     color: white;
   }
   
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
   .search-form input {
     padding: 5px;
     border-radius: 5px;
-    margin-left: 30px;
+    margin-left: 10px;
   }
 
+  .radio{
+    margin-left: 10px;
+  }
+
+  .radio label{
+    margin-right: 10px;
+  }
+ .headerr {
+     margin-left: 10px; 
+    border-radius: 5px; 
+    background-color: #0078d7; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+ }
 /*tablet*/
 
 @media (max-width: 320px) {
