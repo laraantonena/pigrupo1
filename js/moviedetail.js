@@ -15,7 +15,7 @@ then(function(response){
         document.querySelector(".ratingpj").innerText = `Calificación: ${data.vote_average}`;
         document.querySelector(".runtimepj").innerText = `Duración: ${data.runtime} minutos`;
         document.querySelector(".overviewpj").innerText = `Sinopsis: ${data.overview}`;
-        document.querySelector(".imgpj").src = `https://image.tmdb.org/t/p/w500${data.image}`;
+        document.querySelector(".imgpj").src = `${data.image}`;
     })
    .catch(function(error){
     console.error("Error: " + error)
