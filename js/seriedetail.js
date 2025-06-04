@@ -4,9 +4,9 @@ const movieDetailUrl = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${
 
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
-let id = queryStringObj.get("id");
+let id = queryStringObj.get("movieId");
 
-fetch()
+fetch(movieDetailUrl);
 then(function(response){
      response.json()
 })
