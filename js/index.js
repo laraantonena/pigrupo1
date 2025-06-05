@@ -14,21 +14,21 @@ fetch(moviepopularesurl)
     .then(function(data) { 
         let section= data.results;
     })
-     for(let i = 0; i < section.length; i++) {
-        sectionHTML += `
-            <article class="foto">
-                <a href="./detail-movie.html?id=${sectionHTML[i].id}">
-                <img src="https://image.tmdb.org/t/p/w500${sectionHTML[i].poster_path}" alt="imagen de pelicula">
-                <img src=""  alt="imagen de pelicula">
-                </a>
-                <h3>title:"${movies[i].title}"</h3>
-                <p></p>
-            </article>
-        `;   }
+    //  for(let i = 0; i < section.length; i++) {
+    //     sectionHTML += `
+    //         <article class="foto">
+    //             <a href="./detail-movie.html?id=${sectionHTML[i].id}">
+    //             <img src="https://image.tmdb.org/t/p/w500${sectionHTML[i].poster_path}" alt="imagen de pelicula">
+    //             <img src=""  alt="imagen de pelicula">
+    //             </a>
+    //             <h3>title:"${movies[i].title}"</h3>
+    //             <p></p>
+    //         </article>
+    //     `;   }
 
-  .catch(function(error){
-    console.error("Error: " + error)
-})
+ .catch (function (error){
+    console.log (`error:${error}`)
+});
 
 
 // fetch(movieDetailUrl)   
