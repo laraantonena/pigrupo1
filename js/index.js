@@ -1,31 +1,34 @@
 const apiKey = "c251b061cc3873b5dfe2bf2ae9caae5e";  
-const movieId =  
- movieDetailUrl = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&language=es-ES`;
-let queryString = location.search;  
-let queryStringObj = new URLSearchParams(queryString);
-let id = queryStringObj.get("id"); 
-let section = ``; 
+// const movieId =  
+ moviepopularesurl = `https://api.themoviedb.org/3/movie/%${movieid}popular?api_key=${apiKey}`;
+
+// let queryString = location.search;  
+// let queryStringObj = new URLSearchParams(queryString);
+// let id = queryStringObj.get("id"); 
+// let sectionHTML = ``; 
 
 
-fetch(movieDetailUrl)
+fetch(moviepopularesurl)
 .then(function(response) {  
     return response.json();})
     .then(function(data) { 
         let section= data.results;
     })
      for(let i = 0; i < section.length; i++) {
-        section += ` <h2></h2>
-        <section class="peliculaspopulares">
+        sectionHTML += `
             <article class="foto">
-                <a href="./detail-movie.html">
+                <a href="./detail-movie.html?id=${sectionHTML[i].id}">
+                <img src="https://image.tmdb.org/t/p/w500${sectionHTML[i].poster_path}" alt="imagen de pelicula">
                 <img src=""  alt="imagen de pelicula">
                 </a>
-                <h3></h3>
+                <h3>title:"${movies[i].title}"</h3>
                 <p></p>
             </article>
         `;   }
 
-
+  .catch(function(error){
+    console.error("Error: " + error)
+})
 
 
 // fetch(movieDetailUrl)   

@@ -1,5 +1,5 @@
 const apiKey = "c251b061cc3873b5dfe2bf2ae9caae5e"; 
-const movieid = 
+// const movieid = 
 const movieDetailUrl = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&language=es-ES`;
 
 let queryString = location.search;
