@@ -212,6 +212,13 @@ header{
   padding: 40px;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  margin: 30px;
+}
+
 section.detailgenres h1 {
   width: 100%;
   text-align: center;
