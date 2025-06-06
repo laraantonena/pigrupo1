@@ -7,8 +7,7 @@ const genreId = queryParams.get('id');
 const type = queryParams.get('type'); 
 const genreName = queryParams.get('name');
 
-const section = document.querySelector('section');
-section.classList.add('detailgenres');
+const section = document.querySelector('.detailgenres');
 
 document.querySelector('h1').innerText = `Género: ${genreName}`;
 
@@ -19,7 +18,6 @@ fetch(endpoint)
     return response.json();
   })
   .then(function(data) {
-    const section = document.querySelector('section');
     let html = '';
 
     data.results.slice(0, 10).forEach(function(item) {
@@ -30,7 +28,7 @@ fetch(endpoint)
 
         if (type === "movie") {
           html += `
-        <article>
+        <article class="card">
           <a href="./detail-movie.html?id=${item.id}&type=${type}">
             <img src="${imgSrc}" alt="${title}">
           </a>
@@ -40,7 +38,7 @@ fetch(endpoint)
         }
       else {
           html += `
-        <article>
+        <article class="card">
           <a href="./detail-series.html?id=${item.id}&type=${type}">
             <img src="${imgSrc}" alt="${title}">
           </a>
@@ -51,7 +49,7 @@ fetch(endpoint)
 
     });
 
-    section.innerHTML = html;
+   section.innerHTML = html;
   })
 .catch(function (error) {
         console.log("El error es: " + error);
