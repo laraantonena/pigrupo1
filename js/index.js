@@ -73,7 +73,7 @@ fetch(tvpopularsurl)
     for(let i = 0; i < series.length; i++) {
         seriesHTML += `
             <article class="foto">
-                <a href="./detail-series.html">
+                <a href="./detail-series.html${series[i].id}">
                 <img src="https://image.tmdb.org/t/p/w500/${series[i].poster_path}" alt="imagen de serie">
                 </a>
                 <h3>${series[i].name}</h3>
