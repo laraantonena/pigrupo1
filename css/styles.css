@@ -17,7 +17,16 @@ body{
     flex-direction: row;
     justify-content: space-around;
 }
- 
+.seriespopulares{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+.criticapeliculas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 .foto{
     max-width: 200px;
 }
