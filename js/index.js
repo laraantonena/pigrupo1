@@ -60,8 +60,7 @@ fetch(criticaurl)
     criticaContainer.innerHTML = criticaHTML;
 })
 .catch(function(error){
-    console.error("Error: " + error)
-})
+    console.error("Error: " + error)})
 
 
 fetch(tvpopularsurl)
