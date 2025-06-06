@@ -29,7 +29,7 @@ if (peliculas) {
                 encontrado.style.display = "none";
             } else {
                 texto.innerText = `Resultados de búsqueda para: "${buscar}"`;
-                for (let i = 0; i < 5; i++) {
+                for (let i = 0; i < newss.length; i++) {
                     const element = newss[i];
                     todoscharacters += `
                     <article class="article">
@@ -65,7 +65,7 @@ if (peliculas) {
                 encontrado.style.display = "none"; 
             } else {
                 texto.innerText = `Series found for: ${buscar}`; 
-                for (let i = 0; i < 5; i++) {
+                for (let i = 0; i < newss.length; i++) {
                     const element = newss[i];
                     todoscharacters += `
                     <article class="articulo">

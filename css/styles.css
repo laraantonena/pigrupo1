@@ -197,12 +197,24 @@ header{
     align-items: center;
     margin: 20px;
   }
+div.search4{
+    flex-wrap: wrap;
+}
+.articulo{
+max-width: 150px;
+}
+h3.titulos{
+    max-width: 90px;
+}
+h3.titulo{
+    max-width: 90px;
+}
 
   article.articulo {
    display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px; 
+    margin: 40px; 
   }
   .detailgenres { 
      display: flex;
