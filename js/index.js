@@ -29,6 +29,7 @@ fetch(moviepopularsurl)
                 <img src="https://image.tmdb.org/t/p/w500/${movies[i].poster_path}"  alt="imagen de pelicula">
                 </a>
                 <h3>${movies[i].title}</h3>
+                <p>${movies[i].release_date}</p>
                 
             </article>
         `;
@@ -53,7 +54,7 @@ fetch(criticaurl)
                 <img src="https://image.tmdb.org/t/p/w500/${criticas[i].poster_path}" alt="imagen de pelicula">
                 </a>
                 <h3>${criticas[i].title}</h3>
-                
+                <p>${criticas[i].release_date}</p>
             </article>
         `;
     }
@@ -77,7 +78,7 @@ fetch(tvpopularsurl)
                 <img src="https://image.tmdb.org/t/p/w500/${series[i].poster_path}" alt="imagen de serie">
                 </a>
                 <h3>${series[i].name}</h3>
-                
+                <p>${series[i].release_date}</p>
             </article>
         `;
     }
