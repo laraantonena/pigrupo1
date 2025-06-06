@@ -23,9 +23,11 @@ fetch(endpoint)
         ? `https://image.tmdb.org/t/p/w500${item.poster_path}`
         : './img/no-image.png';
 
+        if 
+
       html += `
         <article>
-          <a href="./detail-${type}.html?id=${item.id}">
+          <a href="./detail-genres.html?id=${item.id}&type=${type}">
             <img src="${imgSrc}" alt="${title}">
           </a>
           <h2>${title}</h2>

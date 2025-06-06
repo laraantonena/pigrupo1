@@ -22,7 +22,7 @@ fetch(moviepopularsurl)
 .then(function(data){
     let movies= data.results;
 
-    for(let i = 0; i < movies.length; i++) {
+    for(let i = 0; i < 5; i++) {
         moviesHTML += `
             <article class="foto">
                 <a href="./detail-movie.html?id=${movies[i].id}">
@@ -70,7 +70,7 @@ fetch(tvpopularsurl)
 .then(function(data){
     let series = data.results;
 
-    for(let i = 0; i < series.length; i++) {
+    for(let i = 0; i < 5; i++) {
         seriesHTML += `
             <article class="foto">
                 <a href="./detail-series.html?id=${series[i].id}">
