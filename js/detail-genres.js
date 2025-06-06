@@ -23,16 +23,27 @@ fetch(endpoint)
         ? `https://image.tmdb.org/t/p/w500${item.poster_path}`
         : './img/no-image.png';
 
-        if 
-
-      html += `
+        if (type === "movie") {
+          html += `
         <article>
-          <a href="./detail-genres.html?id=${item.id}&type=${type}">
+          <a href="./detail-movie.html?id=${item.id}&type=${type}">
             <img src="${imgSrc}" alt="${title}">
           </a>
           <h2>${title}</h2>
         </article>
       `;
+        }
+      else {
+          html += `
+        <article>
+          <a href="./detail-series.html?id=${item.id}&type=${type}">
+            <img src="${imgSrc}" alt="${title}">
+          </a>
+          <h2>${title}</h2>
+        </article>
+      `;
+        }
+
     });
 
     section.innerHTML = html;
