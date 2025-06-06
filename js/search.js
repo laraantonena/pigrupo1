@@ -24,7 +24,7 @@ if (peliculas) {
                 oculto.style.display = "block"; 
                 encontrado.style.display = "none";
             } else {
-                texto.innerText = `Movies found for: ${buscar}`; /
+                texto.innerText = `Movies found for: ${buscar}`; 
                 for (let i = 0; i < newss.length; i++) {
                     const element = newss[i];
                     todoscharacters += `
