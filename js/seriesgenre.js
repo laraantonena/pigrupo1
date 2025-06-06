@@ -18,4 +18,6 @@ fetch(`https://api.themoviedb.org/3/genre/tv/list?api_key=${apiKey}&language=es-
 
     genresSection.innerHTML = html;
   })
-  .catch(error => console.log(error));
+  .catch(function (error) {
+        console.log("El error es: " + error);
+    });

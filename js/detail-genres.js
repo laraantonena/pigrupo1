@@ -35,4 +35,6 @@ fetch(endpoint)
 
     section.innerHTML = html;
   })
-  .catch(error => console.log(error));
+.catch(function (error) {
+        console.log("El error es: " + error);
+    });
