@@ -1,20 +1,22 @@
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get("id");
-let article = document.querySelector(".detail-movie");
+console.log(id);
+
+let article = document.querySelector(".detail-serie");
 let url = `https://api.themoviedb.org/3/movie/${id}?api_key=c251b061cc3873b5dfe2bf2ae9caae5e`
-console.log(id)
+
 
 fetch(url)
 .then(function (response) {
      return response.json();
 })
-.then(function (data) {
+.then(function(data) {
     console.log(data);
 
     let generos = ""
-     for (let i = 0; i < data.genre.length; i++) {
-    generos += `<a href="detallegenero.html?id=${results.genres[i].id}&nombre=${results.genres[i].name}&tipo=pelicula">${results.genres[i].name}</a>`
+     for (let i=0; i< data.genres.length; i++) {
+    generos += `<a href="detail-genre.html?id=${results.genres[i].id}&nombre=${results.genres[i].name}&tipo=pelicula">${results.genres[i].name}</a>`
     }
     article.innerHTML = `
         <article>
