@@ -25,7 +25,7 @@ fetch(moviepopularsurl)
     for(let i = 0; i < movies.length; i++) {
         moviesHTML += `
             <article class="foto">
-                <a href="./detail-movie.html">
+                <a href=""./detail-movie.html?id=${movies[i].id}">
                 <img src="https://image.tmdb.org/t/p/w500/${movies[i].poster_path}"  alt="imagen de pelicula">
                 </a>
                 <h3>${movies[i].title}</h3>
@@ -49,7 +49,7 @@ fetch(criticaurl)
     for(let i = 0; i < criticas.length; i++) {
         criticaHTML += `
             <article class="foto">
-                <a href="./detail-movie.html">
+                <a href="./detail-movie.html?id=${criticas[i].id}">
                 <img src="https://image.tmdb.org/t/p/w500/${criticas[i].poster_path}" alt="imagen de pelicula">
                 </a>
                 <h3>${criticas[i].title}</h3>
@@ -73,7 +73,7 @@ fetch(tvpopularsurl)
     for(let i = 0; i < series.length; i++) {
         seriesHTML += `
             <article class="foto">
-                <a href="./detail-movie.html?id=${series[i].id}"">
+                <a href="./detail-series.html?id=${series[i].id}">
                 <img src="https://image.tmdb.org/t/p/w500/${series[i].poster_path}" alt="imagen de serie">
                 </a>
                 <h3>${series[i].name}</h3>
