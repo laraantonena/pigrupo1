@@ -4,7 +4,7 @@ const queryString = location.search;
 const queryParams = new URLSearchParams(queryString);
 
 const genreId = queryParams.get('id');
-const type = queryParams.get('type'); // "movie" o "tv"
+const type = queryParams.get('type'); 
 const genreName = queryParams.get('name');
 
 document.querySelector('h1').innerText = `Género: ${genreName}`;
