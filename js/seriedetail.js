@@ -1,31 +1,38 @@
-const apiKey = "c251b061cc3873b5dfe2bf2ae9caae5e"; 
-const movieDetailUrl = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&language=es-ES`;
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
-let id = queryStringObj.get("Id");
+let id = queryStringObj.get("id");
+console.log(id);
 
-fetch(movieDetailUrl);
-then(function(response){
-     response.json()
-})
-    .then(function(data) {
-      
-          let section= data.results;
-    
-     for(let i = 0; i < section.length; i++) {
-        section += ` 
-        <article id="detail-movie">
-                <h1 class="namee"> Nombre de la pelicula: </h1>
-                <img class="imgn" src=""  alt="imagen de pelicula">
-                <h4 class="releasedatee"> Fecha de lanzamiento: </h4>
-                <h4 class="genrepj"> Genero de la pelicula: </h4>
-                <h4 class="ratingpj"> Calificacion: </h4>
-                <h4 class="runtimepj"> Tiempo de duracion: </h4>
-                <p class="decripcionpj"> Descripcion: </p>
-         </article>
-        `}
-    })
+let section = document.querySelector(".detail-serie");
+let url = `https://api.themoviedb.org/3/movie/${id}?api_key=c251b061cc3873b5dfe2bf2ae9caae5e`
 
-   .catch(function(error){
-    console.error("Error: " + error)
+
+fetch(url)
+.then(function (response) {
+     return response.json();
 })
+.then(function(data) {
+    console.log(data);
+
+    let generos = ""
+     for (let i=0; i< data.genres.length; i++) {
+    generos += `<a href="detail-genres.html?id=${data.genres[i].id}&nombre=${data.genres[i].name}&tipo=pelicula">${data.genres[i].name}</a>`
+    }
+    section.innerHTML = `
+        <section>
+                   <h1>${data.title}</h1>
+                   <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}"   alt="${data.title}">
+                  <ul>
+                   <li>Fecha de lanzamiento:${data.release_date}</li>
+                   <li>${generos}</li>
+                   <li>Calificacion: ${data.vote_average}</li>
+                   <li>Popularity: ${data.popularity}</li>
+                   </ul>
+                   <p>${data.overview}</p>
+        </section>
+               `
+})
+
+.catch(function(error){
+               console.log("El error es: " + error)
+ });
