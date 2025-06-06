@@ -25,7 +25,7 @@ fetch(moviepopularsurl)
     for(let i = 0; i < movies.length; i++) {
         moviesHTML += `
             <article class="foto">
-                <a href=""./detail-movie.html?id=${movies[i].id}">
+                <a href="./detail-movie.html?id=${movies[i].id}">
                 <img src="https://image.tmdb.org/t/p/w500/${movies[i].poster_path}"  alt="imagen de pelicula">
                 </a>
                 <h3>${movies[i].title}</h3>
