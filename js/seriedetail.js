@@ -1,38 +1,34 @@
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get("id");
-console.log(id);
+console.log("ID de la serie:", id);
 
 let section = document.querySelector(".detail-serie");
-let url = `https://api.themoviedb.org/3/movie/${id}?api_key=c251b061cc3873b5dfe2bf2ae9caae5e`
-
+let url = `https://api.themoviedb.org/3/tv/${id}?api_key=c251b061cc3873b5dfe2bf2ae9caae5e&language=es-ES`;
 
 fetch(url)
-.then(function (response) {
-     return response.json();
-})
-.then(function(data) {
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
     console.log(data);
 
-    let generos = ""
-     for (let i=0; i< data.genres.length; i++) {
-    generos += `<a href="detail-genres.html?id=${data.genres[i].id}&nombre=${data.genres[i].name}&tipo=pelicula">${data.genres[i].name}</a>`
+    let generos = "";
+    for (let i = 0; i < data.genres.length; i++) {
+      generos += `<a href="detail-genres.html?id=${data.genres[i].id}&nombre=${data.genres[i].name}&tipo=serie">${data.genres[i].name}</a> `;
     }
     section.innerHTML = `
-        <section>
-                   <h1>${data.title}</h1>
-                   <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}"   alt="${data.title}">
-                  <ul>
-                   <li>Fecha de lanzamiento:${data.release_date}</li>
-                   <li>${generos}</li>
-                   <li>Calificacion: ${data.vote_average}</li>
-                   <li>Popularity: ${data.popularity}</li>
-                   </ul>
-                   <p>${data.overview}</p>
-        </section>
-               `
-})
-
-.catch(function(error){
-               console.log("El error es: " + error)
- });
+      <h1>${data.name}</h1>
+      <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}" alt="${data.name}">
+      <ul>
+        <li><strong>Fecha de estreno:</strong> ${data.first_air_date}</li>
+        <li><strong>Géneros:</strong> ${generos}</li>
+        <li><strong>Calificación:</strong> ${data.vote_average}</li>
+        <li><strong>Popularidad:</strong> ${data.popularity}</li>
+      </ul>
+      <p><strong>Sinopsis:</strong> ${data.overview}</p>
+    `;
+  })
+  .catch(function (error) {
+    console.error("El error es:", error);
+  });
