@@ -184,6 +184,7 @@ header{
   .search-form {
     display: flex;
     align-items: center;
+    margin: 10px;
   }
   .search-form input {
     padding: 5px;
