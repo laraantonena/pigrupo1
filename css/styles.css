@@ -198,11 +198,11 @@ header{
     margin: 20px;
   }
 
-  section.navegation { 
+  .detailgenres { 
      display: flex;
-    flex-direction: wrap;
+     flex-wrap: wrap;
     align-items: center;
-    margin: 20px;
+    justify-content: space-between;
   }
 
   .radio{
