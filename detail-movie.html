@@ -1,66 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Detalle de Película</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
         <nav>
-          <section class="navegation">
-            <div>
-                <a href="./index.html"><img class="logo" src="./img/logo_real.png" alt="logo"></a>
-              </div>
-              <ul class="ulheader">
-                <li class="headerli">
-                    <a href="./index.html">Home</a>
-                    <span>|</span>
-                </li>
-                <li class="headerli">
-                    <a href="./seriesgenre.html">Géneros (series)</a>
-                    <span>|</span>
-                </li>
-                <li class="headerli">
-                    <a href="./moviegenres.html">Géneros (películas)</a>
-                    <span>|</span>
-                </li>
-                <li class="headerli">
-                    <a href="./login.html">Login</a>
-                    <span>|</span>
-                </li>
-                <li class="headerli">
-                    <a href="./register.html">Registrate</a>
-                </li>
-              </ul>
-            <form action="./search-results.html" method="get" class="search-form">
-              <input type="text" name="busqueda" id="busqueda" placeholder="Buscar...">
-                <span class="radio">
-            <label>
-              <input type="radio" name="pelicula" value="peliculas" checked> Películas
-            </label>
-            <label>
-              <input type="radio" name="serie" value="series"> Series
-            </label>
-                 </span>
-           <button class="headerr" type="submit">Buscar</button>
-            </form>
-          </section>
+            <section class="navegation">
+                <div>
+                    <a href="./index.html"><img class="logo" src="./img/logo_real.png" alt="logo"></a>
+                </div>
+                <ul class="ulheader">
+                    <li class="headerli">
+                        <a href="./index.html">Home</a> <span>|</span>
+                    </li>
+                    <li class="headerli">
+                        <a href="./seriesgenre.html">Géneros (series)</a> <span>|</span>
+                    </li>
+                    <li class="headerli">
+                        <a href="./moviegenres.html">Géneros (películas)</a> <span>|</span>
+                    </li>
+                    <li class="headerli">
+                        <a href="./login.html">Login</a> <span>|</span>
+                    </li>
+                    <li class="headerli">
+                        <a href="./register.html">Registrate</a>
+                    </li>
+                </ul>
+                <form action="./search-results.html" method="get" class="search-form">
+                    <input type="text" name="busqueda" id="busqueda" placeholder="Buscar...">
+                    <span class="radio">
+                        <label><input type="radio" name="tipo" value="peliculas" checked> Películas</label>
+                        <label><input type="radio" name="tipo" value="series"> Series</label>
+                    </span>
+                    <button class="headerr" type="submit">Buscar</button>
+                </form>
+            </section>
         </nav>
-      <main>
+    </header>
 
-         <section class="detail-movie"> 
-         </section>
-
+    <main>
+        <section class="detail-movie"></section>
     </main>
+
     <footer>
         <p>Lara Antonena</p>
         <p>Renata Daffara</p>
         <p>Nicole Doctorovich</p>
     </footer>
+
     <script src="./js/moviedetail.js"></script>
 </body>
 
