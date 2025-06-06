@@ -7,10 +7,10 @@ let peliculas = queryObj.get("pelicula");
 let oculto = document.querySelector(".search3");
 let encontrado = document.querySelector(".search4");
 let texto = document.querySelector(".search2")
-// let spinner = document.querySelector(".spinner");
+let spinner = document.querySelector(".spinner");
 
-// spinner.style.display = "none"
-// spinner.style.display = "block";
+spinner.style.display = "none"
+spinner.style.display = "block";
 console.log(buscar);
 
 if (peliculas) {
@@ -29,7 +29,6 @@ if (peliculas) {
                 encontrado.style.display = "none";
             } else {
                 texto.innerText = `Resultados de búsqueda para: "${buscar}"`;
-                // texto.innerText = `Movies found for: ${buscar}`; 
                 for (let i = 0; i < newss.length; i++) {
                     const element = newss[i];
                     todoscharacters += `
