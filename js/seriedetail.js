@@ -3,7 +3,7 @@ let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get("id");
 console.log(id);
 
-let article = document.querySelector(".detail-serie");
+let section = document.querySelector(".detail-serie");
 let url = `https://api.themoviedb.org/3/movie/${id}?api_key=c251b061cc3873b5dfe2bf2ae9caae5e`
 
 
@@ -16,12 +16,12 @@ fetch(url)
 
     let generos = ""
      for (let i=0; i< data.genres.length; i++) {
-    generos += `<a href="detail-genre.html?id=${results.genres[i].id}&nombre=${results.genres[i].name}&tipo=pelicula">${results.genres[i].name}</a>`
+    generos += `<a href="detail-genres.html?id=${data.genres[i].id}&nombre=${data.genres[i].name}&tipo=pelicula">${data.genres[i].name}</a>`
     }
-    article.innerHTML = `
-        <article>
+    section.innerHTML = `
+        <section>
                    <h1>${data.title}</h1>
-                   <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}"  alt="${results.title}">
+                   <img src="https://image.tmdb.org/t/p/w500/${data.poster_path}"   alt="${data.title}">
                   <ul>
                    <li>Fecha de lanzamiento:${data.release_date}</li>
                    <li>${generos}</li>
@@ -29,7 +29,7 @@ fetch(url)
                    <li>Popularity: ${data.popularity}</li>
                    </ul>
                    <p>${data.overview}</p>
-                  </article>
+        </section>
                `
 })
 
