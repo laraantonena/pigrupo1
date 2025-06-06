@@ -51,7 +51,7 @@ fetch(endpoint)
 
     });
 
-    section.innerHTML = html;
+   section.innerHTML = html;
   })
 .catch(function (error) {
         console.log("El error es: " + error);
