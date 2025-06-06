@@ -198,19 +198,18 @@ header{
     margin: 20px;
   }
 
- .detailgenres {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px;
-  justify-content: center;
-  padding: 40px;
-}
-
-section.detailgenres h1 {
-  width: 100%;
-  text-align: center;
-  margin-bottom: 30px;
-}
+  article.articulo {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; 
+  }
+  .detailgenres { 
+     display: flex;
+     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   .radio{
     margin-left: 10px;

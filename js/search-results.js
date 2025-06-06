@@ -29,7 +29,7 @@ if (peliculas) {
                 encontrado.style.display = "none";
             } else {
                 texto.innerText = `Resultados de búsqueda para: "${buscar}"`;
-                for (let i = 0; i < newss.length; i++) {
+                for (let i = 0; i < 5; i++) {
                     const element = newss[i];
                     todoscharacters += `
                     <article class="article">
@@ -65,11 +65,11 @@ if (peliculas) {
                 encontrado.style.display = "none"; 
             } else {
                 texto.innerText = `Series found for: ${buscar}`; 
-                for (let i = 0; i < newss.length; i++) {
-                    const element = info[i];
+                for (let i = 0; i < 5; i++) {
+                    const element = newss[i];
                     todoscharacters += `
                     <article class="articulo">
-                        <a href="detail-serie.html?id=${element.id}">
+                        <a href="detail-series.html?id=${element.id}">
                             <img src="https://image.tmdb.org/t/p/w500/${element.poster_path}" alt="${element.name}" class="img">
                             <h3 class="titulo">${element.name}</h3>
                             <p class="fecha">(${element.first_air_date})</p>
