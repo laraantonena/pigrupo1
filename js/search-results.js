@@ -14,7 +14,7 @@ let texto = document.querySelector(".search2")
 console.log(buscar);
 
 if (peliculas) {
-    let urlsi = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=Inception`;
+    let urlsi = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${buscar}`;
 
     fetch(urlsi)
         .then(function (response) {
@@ -52,7 +52,7 @@ if (peliculas) {
         });
 
 } else if (series) {
-    let urlll = `https://api.themoviedb.org/3/search/tv?api_key=c251b061cc3873b5dfe2bf2ae9caae5e&query=${buscar}`;
+    let urlll = `https://api.themoviedb.org/3/search/tv?api_key=${apiKey}&query=${buscar}`;
     fetch(urlll)
         .then(function (response) {
             return response.json();
