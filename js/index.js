@@ -46,7 +46,7 @@ fetch(criticaurl)
 .then(function(data){
     let criticas = data.results;
 
-    for(let i = 0; i < criticas.length; i++) {
+    for(let i = 0; i < 5 ; i++) {
         criticaHTML += `
             <article class="foto">
                 <a href="./detail-movie.html?id=${criticas[i].id}">

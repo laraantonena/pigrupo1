@@ -1,16 +1,20 @@
 let queryString = location.search;
 let queryObj = new URLSearchParams(queryString);
+const apiKey = "c251b061cc3873b5dfe2bf2ae9caae5e";
 let buscar = queryObj.get("busqueda");
 let series = queryObj.get("serie");
 let peliculas = queryObj.get("pelicula");
 let oculto = document.querySelector(".search3");
 let encontrado = document.querySelector(".search4");
 let texto = document.querySelector(".search2")
+// let spinner = document.querySelector(".spinner");
 
+// spinner.style.display = "none"
+// spinner.style.display = "block";
 console.log(buscar);
 
 if (peliculas) {
-    let urlsi = `https://api.themoviedb.org/3/search/movie?api_key=c251b061cc3873b5dfe2bf2ae9caae5&query=${buscar}`;
+    let urlsi = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=Inception`;
 
     fetch(urlsi)
         .then(function (response) {
@@ -24,7 +28,8 @@ if (peliculas) {
                 oculto.style.display = "block"; 
                 encontrado.style.display = "none";
             } else {
-                texto.innerText = `Movies found for: ${buscar}`; 
+                texto.innerText = `Resultados de búsqueda para: "${buscar}"`;
+                // texto.innerText = `Movies found for: ${buscar}`; 
                 for (let i = 0; i < newss.length; i++) {
                     const element = newss[i];
                     todoscharacters += `
@@ -47,7 +52,7 @@ if (peliculas) {
         });
 
 } else if (series) {
-    let urlll = `https://api.themoviedb.org/3/search/tv?api_key=c251b061cc3873b5dfe2bf2ae9caae5&query=${buscar}`;
+    let urlll = `https://api.themoviedb.org/3/search/tv?api_key=c251b061cc3873b5dfe2bf2ae9caae5e&query=${buscar}`;
     fetch(urlll)
         .then(function (response) {
             return response.json();
@@ -61,7 +66,7 @@ if (peliculas) {
                 encontrado.style.display = "none"; 
             } else {
                 texto.innerText = `Series found for: ${buscar}`; 
-                for (let i = 0; i < info.length; i++) {
+                for (let i = 0; i < newss.length; i++) {
                     const element = info[i];
                     todoscharacters += `
                     <article class="articulo">
