@@ -198,6 +198,12 @@ header{
     margin: 20px;
   }
 
+  article.articulo {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px; 
+  }
   .detailgenres { 
      display: flex;
      flex-wrap: wrap;
