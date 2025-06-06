@@ -78,7 +78,7 @@ fetch(tvpopularsurl)
                 <img src="https://image.tmdb.org/t/p/w500/${series[i].poster_path}" alt="imagen de serie">
                 </a>
                 <h3>${series[i].name}</h3>
-                <p>${series[i].release_date}</p>
+                <p>${series[i].first_air_date}</p>
             </article>
         `;
     }
